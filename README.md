@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bouvardia Beauty Studio - Landing Page
 
-## Getting Started
+Welcome to **Bouvardia Beauty Studio**, a professional makeup artist landing page built with cutting-edge technologies to showcase our services and connect with our clients.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🖌️ Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is a landing page for Bouvardia Beauty Studio designed to present our services, highlight our portfolio, and engage potential clients. The website is optimized for performance, responsiveness, and a seamless user experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: Utility-first CSS framework for fast and responsive styling.
+- **shadcn UI**: A set of accessible and customizable components.
+- **Magic UI**: For additional interactive elements and animations.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website design draws inspiration from the sophisticated aesthetic of **Bouvardia Beauty Studio**. It seamlessly blends soft, elegant colors, smooth animations, and a minimalist layout to reflect the brand’s refined identity.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Fonts
 
-## Deploy on Vercel
+- **Allura**: Adds a touch of elegance.
+- **Kurale**: Provides a modern, stylish appearance.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Custom Colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Pink Light**: `#F6D7DF` - A soft, delicate pink for a subtle touch.
+- **Tan**: `#D0A88D` - A warm, neutral tone to complement the overall palette.
+- **Dark Gray**: `#3C3333` - A deep, sophisticated gray for text and accents.
+- **Mocha**: `#836757` - A rich brown for highlights and call-to-action elements.
+
+## Figma Design
+
+[View the Figma file](https://www.figma.com/design/mQJfPKBF2Qi1bsRBow07Tk/Untitled?node-id=0-1&t=stUOjF3L2qA35z0R-1) for the complete design mockup.
+
+---
