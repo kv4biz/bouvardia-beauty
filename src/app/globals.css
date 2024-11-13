@@ -9,7 +9,6 @@ body {
 h1,
 .script-font {
   font-family: var(--font-allura), cursive;
-  font-size: xx-large;
 }
 
 @layer base {
