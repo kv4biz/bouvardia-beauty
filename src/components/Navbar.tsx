@@ -16,10 +16,8 @@ import {
 import { Menu as MenuIcon } from "lucide-react";
 
 const Navbar: React.FC = () => {
-  const [active, setActive] = useState<string | null>(null);
-
   return (
-    <Menu setActive={setActive}>
+    <Menu setActive={() => {}}>
       {/* Left Side Links (Hidden on small screens) */}
       <div className="hidden md:flex items-center space-x-6 md:space-x-10">
         {NAV_LINKS.slice(0, 3).map((link) => (

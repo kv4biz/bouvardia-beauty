@@ -3,18 +3,15 @@ import React from "react";
 import { Button } from "./ui/button";
 import TypingAnimation from "./ui/typing-animation";
 
-type Props = {};
-
-const HomeBanner = (props: Props) => {
+const HomeBanner = () => {
   return (
     <div className="relative flex w-full h-[720px] md:h-screen">
       {/* Background Image */}
       <Image
         src="/home-banner.svg"
         alt="home banner"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 -z-10"
+        fill
+        className="absolute inset-0 -z-10 object-cover"
       />
 
       {/* Text Content */}
@@ -27,7 +24,6 @@ const HomeBanner = (props: Props) => {
         <span className="text-5xl md:text-7xl text-white">
           Bouvardia Beauty
         </span>
-
         <span className="text-lg md:text-xl md:leading-5 md:tracking-wide text-white">
           Your Guide to Glamorous Transformation
         </span>
