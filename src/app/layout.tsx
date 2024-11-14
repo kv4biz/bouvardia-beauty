@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Allura, Kurale } from "next/font/google";
+import { Allura, Kurale, Jomolhari } from "next/font/google";
 import "./globals.css";
 
 // Import Google Fonts
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${allura.variable} ${kurale.variable} antialiased`}>
+      <body className={`${allura.variable} ${kurale.variable} antialiased `}>
         {children}
       </body>
     </html>

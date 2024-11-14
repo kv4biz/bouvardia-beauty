@@ -88,7 +88,7 @@ export const Menu = ({
       }}
       transition={{ duration: 0.3 }}
       className={`fixed top-0 left-0 right-0  z-50 bg-white dark:bg-black shadow-lg ${
-        scrolled ? "max-w-3xl mx-2 md:mx-auto" : "w-full"
+        scrolled ? "max-w-3xl mx-2 md:mx-auto bg-opacity-75" : "w-full"
       }`}
     >
       <div className="flex justify-between md:justify-center items-center space-x-6 md:space-x-10 mx-2">
