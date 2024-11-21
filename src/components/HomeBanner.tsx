@@ -5,10 +5,10 @@ import TypingAnimation from "./ui/typing-animation";
 
 const HomeBanner = () => {
   return (
-    <div className="relative items-center justify-center flex w-full h-[720px] md:h-screen">
+    <div className="relative items-center justify-center flex w-full h-[580px] md:h-screen">
       {/* Background Image */}
       <Image
-        src="/home-banner.svg"
+        src="/home-banner.png"
         alt="home banner"
         fill
         className="absolute inset-0 -z-10 object-cover"
@@ -30,10 +30,10 @@ const HomeBanner = () => {
         <Button className="mt-8 px-6 text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight">
           Learn More
         </Button>
-        {/* Background Image */}
+        {/* Flower Image */}
         <Image
-          src="/flower.svg"
-          alt="home banner"
+          src="/flower.png"
+          alt="flower"
           width={360}
           height={360}
           loading="lazy"

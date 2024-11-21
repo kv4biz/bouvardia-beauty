@@ -46,6 +46,7 @@ export default {
         // Custom colors
         pinkLight: "#F6D7DF",
         tan: "#D0A88D",
+        darkTan: "#836757",
         darkGray: "#3C3333",
         mocha: "#836757",
         chart: {
