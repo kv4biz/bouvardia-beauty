@@ -3,12 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-kurale), sans-serif;
-}
-
-h1,
-.script-font {
-  font-family: var(--font-allura), cursive;
+  font-family: var(--font-jomolhari), sans-serif;
 }
 
 @layer base {
@@ -73,5 +68,23 @@ h1,
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .allura {
+    @apply font-[family-name:var(--font-allura)];
+  }
+  .kurale {
+    @apply font-[family-name:var(--font-kurale)];
+  }
+  .zeyada {
+    @apply font-[family-name:var(--font-zeyada)];
+  }
+  .instrumentSerif {
+    @apply font-[family-name:var(--font-instrumentSerif)];
+  }
+  .navbar {
+    @apply font-[family-name:var(--font-kurale)] text-xl space-x-8 lg:space-x-20;
+  }
+  .mobile-nav {
+    @apply font-[family-name:var(--font-kurale)] text-lg;
   }
 }

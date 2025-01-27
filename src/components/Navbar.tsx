@@ -1,9 +1,8 @@
 // src/components/Navbar.tsx
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Menu, HoveredLink } from "./ui/navbar-menu";
 import Image from "next/image";
-import { NAV_LINKS } from "../constants/nav-links";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,12 +18,10 @@ const Navbar: React.FC = () => {
   return (
     <Menu setActive={() => {}}>
       {/* Left Side Links (Hidden on small screens) */}
-      <div className="hidden md:flex items-center space-x-6 md:space-x-10">
-        {NAV_LINKS.slice(0, 3).map((link) => (
-          <HoveredLink key={link.name} href={link.href}>
-            {link.name}
-          </HoveredLink>
-        ))}
+      <div className="hidden md:flex items-center space-x-8 lg:space-x-20">
+        <HoveredLink href="/">Home</HoveredLink>
+        <HoveredLink href="/about">About</HoveredLink>
+        <HoveredLink href="/portfolio">Portfolio</HoveredLink>
       </div>
 
       {/* Logo in the Center */}
@@ -39,13 +36,9 @@ const Navbar: React.FC = () => {
       </Link>
 
       {/* Right Side Links & Button (Hidden on small screens) */}
-      <div className="hidden md:flex items-center space-x-6 md:space-x-10">
-        {NAV_LINKS.slice(3).map((link) => (
-          <HoveredLink key={link.name} href={link.href}>
-            {link.name}
-          </HoveredLink>
-        ))}
-
+      <div className="hidden md:flex items-center space-x-8 lg:space-x-20">
+        <HoveredLink href="/services">Services</HoveredLink>
+        <HoveredLink href="/contact">Contact</HoveredLink>
         {/* Booking Button */}
         <Button
           asChild
@@ -69,18 +62,15 @@ const Navbar: React.FC = () => {
             <SheetClose className="absolute border-none top-4 right-4">
               <span className="sr-only">Close</span>
             </SheetClose>
-            <div className="flex flex-col space-y-6 mt-6">
+            <div className="flex flex-col space-y-6 mt-6 mobile-nav">
               {/* Navigation Links */}
-              {NAV_LINKS.map((link) => (
-                <HoveredLink key={link.name} href={link.href}>
-                  {link.name}
-                </HoveredLink>
-              ))}
+              <HoveredLink href="/">Home</HoveredLink>
+              <HoveredLink href="/about">About</HoveredLink>
+              <HoveredLink href="/portfolio">Portfolio</HoveredLink>
+              <HoveredLink href="/services">Services</HoveredLink>
+              <HoveredLink href="/contact">Contact</HoveredLink>
               {/* Booking Button */}
-              <Button
-                asChild
-                className="mt-6 w-full px-6 py-2 text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight"
-              >
+              <Button className="mt-6 w-full px-6 py-2 text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight">
                 <Link href="/booking">Bookings</Link>
               </Button>
             </div>

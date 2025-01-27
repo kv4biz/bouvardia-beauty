@@ -46,12 +46,10 @@ export default function TypingAnimation({
     <motion.h1
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={cn(
-        "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm",
-        className
-      )}
+      viewport={{ once: true }}
+      className={cn("font-display text-center drop-shadow-sm", className)}
     >
       {displayedText ? displayedText : text}
     </motion.h1>
