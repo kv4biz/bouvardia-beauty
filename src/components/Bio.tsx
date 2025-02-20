@@ -26,21 +26,18 @@ const Bio = () => {
             eiusmodte porincididunt ut laboreua.
           </span>
         </div>
-        <Button className="px-6 bg-white border border-darkTan text-darkTan hover:text-white hover:bg-darkTan">
+        <Button variant={"outline"}>
           <Link href={"/about"}>My Story</Link>
         </Button>
       </div>
       <div className="flex w-full justify-center mx-auto gap-2 md:gap-4 py-10 ">
-        <div
-          className="group flex md:h-full md:max-h-[520px] md:w-1/4 h-96 w-80 lg:h-[500px] lg:w-[380px] overflow-hidden hover:-rotate-3 transition-transform duration-300"
-          style={{ perspective: "1000px" }}
-        >
+        <div className="group flex md:max-h-[520px] md:h-full md:w-1/4 h-96 w-72 lg:h-[500px] lg:w-[360px] overflow-hidden rounded-md">
           <Image
             src="/bio-img1.png"
             alt="Bio Image 1"
             width={420}
             height={550}
-            className="object-cover w-full h-full transform transition-transform duration-300 group-hover:translate-z-[-50px] group-hover:scale-105"
+            className="object-cover w-full h-full scale-105"
           />
         </div>
         <div className="hidden md:flex flex-col gap-5 md:w-1/2 text-center items-center">
@@ -62,20 +59,17 @@ const Bio = () => {
               eiusmodte porincididunt ut laboreua.
             </span>
           </div>
-          <Button className="px-10 bg-white border border-darkTan text-darkTan hover:text-white hover:bg-darkTan">
+          <Button variant={"outline"}>
             <Link href={"/about"}>My Story</Link>
           </Button>
         </div>
-        <div
-          className="group flex mt-10 md:mt-20 md:max-h-[520px] md:h-full md:w-1/4  h-96 w-80 lg:h-[500px] lg:w-[380px] overflow-hidden hover:rotate-3 transition-transform duration-300"
-          style={{ perspective: "1000px" }}
-        >
+        <div className="group flex mt-10 md:mt-32 md:max-h-[520px] md:h-full md:w-1/4  h-96 w-72 lg:h-[500px] lg:w-[360px] overflow-hidden rounded-md">
           <Image
             src="/bio-img2.png"
             alt="Bio Image 2"
             width={420}
             height={550}
-            className="object-cover w-full h-full transform transition-transform duration-300 group-hover:translate-z-[-50px] group-hover:scale-105"
+            className="object-cover w-full h-full"
           />
         </div>
       </div>

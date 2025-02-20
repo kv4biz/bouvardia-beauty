@@ -6,6 +6,8 @@ import {
   Jomolhari,
   Zeyada,
   Instrument_Serif,
+  Heebo,
+  Inter,
 } from "next/font/google";
 import "./globals.css";
 
@@ -21,10 +23,20 @@ const kurale = Kurale({
   subsets: ["latin"],
   variable: "--font-kurale",
 });
+const heebo = Heebo({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-heebo",
+});
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-poppins",
+});
+const inter = Inter({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 const jomolhari = Jomolhari({
   weight: ["400"],
@@ -60,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${allura.variable} ${kurale.variable} ${poppins.variable} ${jomolhari.variable} ${zeyada.variable} ${instrumentSerif.variable} antialiased `}
+        className={`${allura.variable} ${kurale.variable} ${poppins.variable} ${jomolhari.variable} ${inter.variable} ${zeyada.variable} ${instrumentSerif.variable} ${heebo.variable} antialiased `}
       >
         {children}
       </body>

@@ -81,10 +81,31 @@ body {
   .instrumentSerif {
     @apply font-[family-name:var(--font-instrumentSerif)];
   }
+  .poppins {
+    @apply font-[family-name:var(--font-poppins)];
+  }
+  .inter {
+    @apply font-[family-name:var(--font-inter)];
+  }
+  .jomolhari {
+    @apply font-[family-name:var(--font-jomolhari)];
+  }
+  .heebo {
+    @apply font-[family-name:var(--font-heebo)];
+  }
   .navbar {
-    @apply font-[family-name:var(--font-kurale)] text-xl space-x-8 lg:space-x-20;
+    @apply kurale text-xl space-x-8 lg:space-x-20;
   }
   .mobile-nav {
-    @apply font-[family-name:var(--font-kurale)] text-lg;
+    @apply kurale text-lg;
+  }
+  .title {
+    @apply text-tan text-4xl instrumentSerif capitalize italic;
+  }
+  .heading {
+    @apply text-4xl lg:text-5xl font-medium jomolhari capitalize;
+  }
+  .text {
+    @apply text-lg text-[#676565] jomolhari;
   }
 }

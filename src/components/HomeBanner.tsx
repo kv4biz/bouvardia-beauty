@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HomeBanner = () => {
   return (
-    <div className="relative items-center justify-center flex w-full h-[580px] mt-6 md:mt-12 md:h-screen">
+    <div className="relative items-center justify-center flex w-full h-[580px] mt-6 md:mt-12 md:h-screen md:max-h-[900px]">
       {/* Background Image */}
       <Image
         src="/home-banner.png"
@@ -28,9 +28,9 @@ const HomeBanner = () => {
         <span className="mt-5 text-xl md:text-2xl md:leading-5 md:tracking-wide text-white">
           Your Guide to Glamorous Transformation
         </span>
-        <div className="flex items-center justify-between p-4 md:p-6 lg:px-8 w-full max-w-sm md:max-w-lg lg:max-w-2xl mt-16 lg:mt-20 rounded-md bg-white">
+        <div className="flex items-center justify-between p-4 md:p-6 lg:px-8 w-full max-w-sm md:max-w-lg lg:max-w-2xl mt-16 lg:mt-20 rounded-md bg-white/95">
           <p className="">Schedule a consultation today.</p>
-          <Button className="bg-tan px-5">
+          <Button variant={"default"}>
             <Link href={"https://calendly.com/kv4biz"}>Book Now</Link>
           </Button>
         </div>

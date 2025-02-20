@@ -40,10 +40,7 @@ const Navbar: React.FC = () => {
         <HoveredLink href="/services">Services</HoveredLink>
         <HoveredLink href="/contact">Contact</HoveredLink>
         {/* Booking Button */}
-        <Button
-          asChild
-          className="px-6 py-2 text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight"
-        >
+        <Button asChild variant={"destructive"}>
           <Link href="/booking">Bookings</Link>
         </Button>
       </div>
