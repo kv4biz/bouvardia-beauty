@@ -10,7 +10,7 @@ const Socials = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-5 w-full overflow-hidden gap-4 relative">
+    <div className="flex flex-col mt-5 w-full overflow-hidden gap-4">
       <div className="flex w-full justify-center mb-2 md:mb-5">
         <span className="heading">Our Instagram</span>
       </div>
