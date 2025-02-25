@@ -1,47 +1,55 @@
 import Image from "next/image";
 import React from "react";
-
+import { Marquee } from "@/components/magicui/marquee";
 const Socials = () => {
+  const images = [
+    { src: "/social1.png", alt: "social image" },
+    { src: "/social2.png", alt: "social image" },
+    { src: "/social3.png", alt: "social image" },
+    { src: "/social4.png", alt: "social image" },
+  ];
+
   return (
-    <div className="flex flex-col mt-10 w-full md:mt-24 overflow-hidden gap-4 relative">
+    <div className="flex flex-col mt-5 w-full overflow-hidden gap-4 relative">
       <div className="flex w-full justify-center mb-2 md:mb-5">
-        <span className="text-3xl font-medium">Our Instagram</span>
+        <span className="heading">Our Instagram</span>
       </div>
       <div className="group relative w-full overflow-hidden h-[400px]">
-        {/* Images */}
-        <div className="flex w-full h-full gap-0">
-          <Image
-            src="/social1.png"
-            height={400}
-            width={400}
-            alt="social image"
-            className="w-1/2 md:w-1/3 lg:w-1/4 h-full object-cover"
-          />
-          <Image
-            src="/social2.png"
-            height={400}
-            width={400}
-            alt="social image"
-            className="w-1/2 md:w-1/3 lg:w-1/4 h-full object-cover"
-          />
-          <Image
-            src="/social3.png"
-            height={400}
-            width={400}
-            alt="social image"
-            className="hidden md:block md:w-1/3 lg:w-1/4 h-full object-cover"
-          />
-          <Image
-            src="/social4.png"
-            height={400}
-            width={400}
-            alt="social image"
-            className="hidden md:block md:w-1/3 lg:w-1/4 h-full object-cover"
-          />
+        <div className="lg:hidden h-full">
+          <Marquee
+            className="h-full gap-0"
+            pauseOnHover
+            style={{ "--duration": "10s" } as React.CSSProperties}
+          >
+            {images.map((image, index) => (
+              <div key={index} className="flex w-full h-full">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </Marquee>
         </div>
-        {/* Text Overlay */}
+
+        <div className="hidden lg:flex w-full h-full">
+          {images.map((image, index) => (
+            <div key={index} className="w-1/2 h-full">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-xl md:text-3xl font-semibold tracking-[12px] lg:tracking-[24px] xl:tracking-[40px] text-white group-hover:text-slate-700 bg-transparent group-hover:bg-white/85 border bg-opacity-50 px-4 py-5 lg:px-16 lg:py-8">
+          <span className="pathwayGothicOne text-xl md:text-2xl lg:text-5xl font-medium tracking-[10px] md:tracking-[20px] lg:tracking-[32px] text-white group-hover:text-slate-700 bg-transparent group-hover:bg-white/85 border bg-opacity-50 px-4 py-5 lg:px-16 lg:py-8">
             BOURVARDIA BEAUTY
           </span>
         </div>

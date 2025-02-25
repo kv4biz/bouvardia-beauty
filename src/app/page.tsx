@@ -4,10 +4,10 @@ import Footer from "@/components/Footer";
 import HomeBanner from "@/components/HomeBanner";
 import Navbar from "@/components/Navbar";
 import Portfolio from "@/components/Portfolio";
-// import Quotes from "@/components/Quotes";
-// import Reviews from "@/components/Reviews";
+import Quotes from "@/components/Quotes";
+import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
-// import Socials from "@/components/Socials";
+import Socials from "@/components/Socials";
 
 export default function Home() {
   return (
@@ -18,10 +18,9 @@ export default function Home() {
       <Collection />
       <Services />
       <Portfolio />
-      {/* <Quotes />
-      
+      <Quotes />
       <Reviews />
-      <Socials /> */}
+      <Socials />
       <Footer />
     </div>
   );

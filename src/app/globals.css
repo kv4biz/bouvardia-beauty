@@ -93,6 +93,9 @@ body {
   .heebo {
     @apply font-[family-name:var(--font-heebo)];
   }
+  .pathwayGothicOne {
+    @apply font-[family-name:var(--font-pathwayGothicOne)];
+  }
   .navbar {
     @apply kurale text-xl space-x-8 lg:space-x-20;
   }
@@ -107,5 +110,14 @@ body {
   }
   .text {
     @apply text-sm md:text-lg text-[#676565] jomolhari;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

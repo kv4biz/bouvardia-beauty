@@ -8,15 +8,21 @@ import {
   Instrument_Serif,
   Heebo,
   Inter,
+  Pathway_Gothic_One,
 } from "next/font/google";
 import "./globals.css";
 
+// Import Google Fonts
 const allura = Allura({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-allura",
 });
-
+const pathwayGothicOne = Pathway_Gothic_One({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-pathwayGothicOne",
+});
 const kurale = Kurale({
   weight: ["400"],
   subsets: ["latin"],
@@ -71,7 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${allura.variable} ${kurale.variable} ${poppins.variable} ${jomolhari.variable} ${inter.variable} ${zeyada.variable} ${instrumentSerif.variable} ${heebo.variable} antialiased `}
+        className={`${allura.variable} ${kurale.variable} ${pathwayGothicOne.variable} ${poppins.variable} ${jomolhari.variable} ${inter.variable} ${zeyada.variable} ${instrumentSerif.variable} ${heebo.variable} antialiased `}
       >
         {children}
       </body>
