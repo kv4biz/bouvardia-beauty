@@ -11,7 +11,6 @@ import {
 } from "next/font/google";
 import "./globals.css";
 
-// Import Google Fonts
 const allura = Allura({
   weight: ["400"],
   subsets: ["latin"],

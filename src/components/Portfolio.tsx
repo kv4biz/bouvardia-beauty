@@ -8,7 +8,7 @@ const Portfolio = () => {
       {/* Header Section */}
       <div className="flex flex-col w-full items-center md:items-start text-center md:text-left gap-2 mb-10">
         <h1 className="title">our work</h1>
-        <span className="text-4xl font-medium">Portfolio</span>
+        <span className="heading">Portfolio</span>
         <p className="text max-w-xl">
           Lorem ipsum dolor sit amet consectetur elit. Laboriosam ad illum nam
           aliquid error! Quasi modi vero consequatur!
@@ -34,7 +34,7 @@ const Portfolio = () => {
         </div>
         {/* Grid of Four Images */}
         <div className="grid grid-cols-2 gap-1">
-          <div className="relative w-full h-80">
+          <div className="relative w-full h-64">
             <Image
               src="/hportfolio2.png"
               alt="Portfolio Image 1"
@@ -43,7 +43,7 @@ const Portfolio = () => {
               className="object-cover"
             />
           </div>
-          <div className="relative w-full h-80">
+          <div className="relative w-full h-64">
             <Image
               src="/hportfolio3.png"
               alt="Portfolio Image 2"
@@ -52,7 +52,7 @@ const Portfolio = () => {
               className="object-cover"
             />
           </div>
-          <div className="relative w-full h-80">
+          <div className="relative w-full h-64">
             <Image
               src="/hportfolio4.png"
               alt="Portfolio Image 3"
@@ -61,7 +61,7 @@ const Portfolio = () => {
               className="object-cover object-right-top"
             />
           </div>
-          <div className="relative w-full h-80">
+          <div className="relative w-full h-64">
             <Image
               src="/hportfolio5.png"
               alt="Portfolio Image 4"
@@ -130,7 +130,7 @@ const Portfolio = () => {
       </div>
 
       {/* View More Button */}
-      <div className="flex items-center justify-center my-5 mt-10">
+      <div className="flex items-center justify-center my-5 lg:mt-10">
         <Button variant={"outline"}>View More</Button>
       </div>
     </div>

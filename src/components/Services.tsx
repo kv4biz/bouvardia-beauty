@@ -38,7 +38,7 @@ const Services = () => {
               className="flex flex-col gap-8 inter bg-[#d9d9d9]/30 h-72 items-center text-center rounded-lg p-4"
             >
               {/* Card Image */}
-              <div className="h-28 w-28 mt-4">
+              <div className="h-16 w-16 md:h-28 md:w-28 mt-4">
                 <Image
                   src={"/service.svg"}
                   alt={card.title}
@@ -49,7 +49,7 @@ const Services = () => {
               </div>
               {/* Card Content */}
               <div className="flex flex-col h-full mb-4">
-                <h2 className="text-black text-md font-semibold">
+                <h2 className="text-black text-sm md:text-md font-semibold">
                   {card.title}
                 </h2>
                 <p className="text-black font-light text-sm">{card.desc}</p>

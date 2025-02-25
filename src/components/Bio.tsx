@@ -12,10 +12,9 @@ const Bio = () => {
           welcome Friends
         </h1>
       </div>
-
       <div className="flex flex-col md:hidden md:my-10 gap-5 justify-center items-center">
         <div className="flex text-center">
-          <span className="text-6xl">
+          <span className="text-5xl">
             HELLO, I’M <br />
             ABISOLA
           </span>
@@ -31,7 +30,7 @@ const Bio = () => {
         </Button>
       </div>
       <div className="flex w-full justify-center mx-auto gap-2 md:gap-4 py-10 ">
-        <div className="group flex md:max-h-[520px] md:h-full md:w-1/4 h-96 w-72 lg:h-[500px] lg:w-[360px] overflow-hidden rounded-md">
+        <div className="group flex md:max-h-[520px] md:h-full md:w-1/4 h-80 w-72 lg:h-[500px] lg:w-[360px] overflow-hidden rounded-md">
           <Image
             src="/bio-img1.png"
             alt="Bio Image 1"
@@ -63,7 +62,7 @@ const Bio = () => {
             <Link href={"/about"}>My Story</Link>
           </Button>
         </div>
-        <div className="group flex mt-10 md:mt-32 md:max-h-[520px] md:h-full md:w-1/4  h-96 w-72 lg:h-[500px] lg:w-[360px] overflow-hidden rounded-md">
+        <div className="group flex mt-10 md:mt-32 md:max-h-[520px] md:h-full md:w-1/4  h-80 w-72 lg:h-[500px] lg:w-[360px] overflow-hidden rounded-md">
           <Image
             src="/bio-img2.png"
             alt="Bio Image 2"

@@ -28,7 +28,7 @@ const Collection = () => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="group flex md:h-full md:max-h-[520px] md:w-full h-80 w-full overflow-hidden rounded-lg"
+            className="group flex md:h-full md:max-h-[520px] md:w-full h-72 w-full overflow-hidden rounded-lg"
           >
             <Image
               src={src}

@@ -100,12 +100,12 @@ body {
     @apply kurale text-lg;
   }
   .title {
-    @apply text-tan text-4xl instrumentSerif capitalize italic;
+    @apply text-tan text-3xl md:text-4xl instrumentSerif capitalize italic;
   }
   .heading {
-    @apply text-4xl lg:text-5xl font-medium jomolhari capitalize;
+    @apply text-3xl md:text-5xl font-medium jomolhari capitalize;
   }
   .text {
-    @apply text-lg text-[#676565] jomolhari;
+    @apply text-sm md:text-lg text-[#676565] jomolhari;
   }
 }
