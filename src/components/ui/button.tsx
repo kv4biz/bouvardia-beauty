@@ -12,13 +12,13 @@ const buttonVariants = cva(
         default:
           "bg-tan hover:border border-tan text-white hover:text-tan hover:bg-transparent jomolhari text-sm w-[120px] lg:w-[160px]",
         destructive:
-          "text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight",
+          "text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight border border:bg-pinkLight",
         outline:
           "bg-transparent border border-darkTan text-darkTan hover:text-white hover:bg-darkTan jomolhari text-sm w-[120px] lg:w-[160px]",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost:
-          "bg-white text-darkGray rounded-none hover:bg-darkGray hover:text-white hover:border hover:border-white",
+          "bg-black hover:bg-transparent rounded-none px-8 mx-2 text-white hover:text-black border border-black",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

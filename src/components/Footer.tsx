@@ -68,7 +68,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="placeholder:text-black border-0"
               />
-              <Button className="rounded-none px-2 h-8 mx-2">
+              <Button variant={"ghost"}>
                 <MoveRight />
               </Button>
             </div>

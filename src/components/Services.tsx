@@ -31,14 +31,14 @@ const Services = () => {
         </div>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-5 md:px-24 pb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:px-8 lg:px-24 pb-4 md:pb-10">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="flex flex-col gap-8 inter bg-[#d9d9d9]/30 h-72 items-center text-center rounded-lg p-4"
+              className="flex flex-col gap-4 inter bg-[#d9d9d9]/30 items-center text-center rounded-lg p-2 py-4 md:p-4"
             >
               {/* Card Image */}
-              <div className="h-16 w-16 md:h-28 md:w-28 mt-4">
+              <div className="h-16 w-16 md:h-28 md:w-28 md:mt-4">
                 <Image
                   src={"/service.svg"}
                   alt={card.title}
@@ -48,7 +48,7 @@ const Services = () => {
                 />
               </div>
               {/* Card Content */}
-              <div className="flex flex-col h-full mb-4">
+              <div className="flex flex-col h-full md:mb-4">
                 <h2 className="text-black text-sm md:text-md font-semibold">
                   {card.title}
                 </h2>
