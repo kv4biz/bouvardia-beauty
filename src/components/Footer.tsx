@@ -3,6 +3,7 @@ import React from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { MoveRight } from "lucide-react";
+import SocialBtn from "./SocialBtn";
 
 const Footer = () => {
   return (
@@ -63,6 +64,7 @@ const Footer = () => {
               Email: kallif@gmail.com
             </span>
             <span className="text-sm font-extralight ">+234-81-0000-234</span>
+            <SocialBtn />
             <div className="flex items-center bg-white py-2 pl-2">
               <Input
                 placeholder="Enter your email"

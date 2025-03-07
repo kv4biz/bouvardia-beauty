@@ -15,11 +15,11 @@ const Socials = () => {
         <span className="heading">Our Instagram</span>
       </div>
       <div className="group relative w-full overflow-hidden h-[400px]">
-        <div className="lg:hidden h-full">
+        <div className="lg:hidden h-full w-full">
           <Marquee
-            className="h-full gap-0"
+            className="h-full w-full gap-0"
             pauseOnHover
-            style={{ "--duration": "10s" } as React.CSSProperties}
+            style={{ "--duration": "20s" } as React.CSSProperties}
           >
             {images.map((image, index) => (
               <div key={index} className="flex w-full h-full">
@@ -49,7 +49,7 @@ const Socials = () => {
           ))}
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="pathwayGothicOne text-xl md:text-2xl lg:text-5xl font-medium tracking-[10px] md:tracking-[20px] lg:tracking-[32px] text-white group-hover:text-slate-700 bg-transparent group-hover:bg-white/85 border bg-opacity-50 px-4 py-5 lg:px-16 lg:py-8">
+          <span className="pathwayGothicOne text-xl md:text-2xl lg:text-5xl font-medium tracking-[10px] md:tracking-[20px] lg:tracking-[32px] text-white bg-transparent group-hover:bg-white/10 border bg-opacity-50 px-4 py-5 lg:px-16 lg:py-8">
             BOURVARDIA BEAUTY
           </span>
         </div>

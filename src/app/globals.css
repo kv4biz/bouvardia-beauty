@@ -93,6 +93,24 @@ body {
   .heebo {
     @apply font-[family-name:var(--font-heebo)];
   }
+  .murecho {
+    @apply font-[family-name:var(--font-murecho)];
+  }
+  .italianno {
+    @apply font-[family-name:var(--font-italianno)];
+  }
+  .domine {
+    @apply font-[family-name:var(--font-domine)];
+  }
+  .inriaSerif {
+    @apply font-[family-name:var(--font-inriaSerif)];
+  }
+  .playfairDisplay {
+    @apply font-[family-name:var(--font-playfairDisplay)];
+  }
+  .IBMPlexMono {
+    @apply font-[family-name:var(--font-IBMPlexMono)];
+  }
   .pathwayGothicOne {
     @apply font-[family-name:var(--font-pathwayGothicOne)];
   }

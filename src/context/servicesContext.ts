@@ -20,3 +20,26 @@ export const cards = [
     desc: "Author of Die Vertretung beim Rechtsgeschälft. Agency, in law, the relationship that exists",
   },
 ];
+
+export const abtServices = [
+  {
+    title: "Quality Make-Up Product",
+    desc: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, ",
+    img: "/abtservice1.png",
+  },
+  {
+    title: "Make-Up Tips",
+    desc: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, ",
+    img: "/abtservice2.png",
+  },
+  {
+    title: "Skin Care Products",
+    desc: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, ",
+    img: "/abtservice3.png",
+  },
+  {
+    title: "Make-Up Service",
+    desc: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, ",
+    img: "/abtservice4.png",
+  },
+];
