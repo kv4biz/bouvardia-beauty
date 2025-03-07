@@ -20,14 +20,14 @@ const buttonVariants = cva(
         ghost:
           "bg-white text-darkGray rounded-none hover:bg-darkGray hover:text-white hover:border hover:border-white",
         darkghost:
-          "bg-black hover:bg-white rounded-none px-8 mx-2 text-white hover:text-black border border-black",
+          "bg-black hover:bg-white rounded-none px-6 text-white hover:text-black border border-black",
         link: "text-primary underline-offset-4 hover:underline",
         icon: "bg-black hover:bg-white rounded-none text-white hover:text-black border border-black",
       },
       size: {
         default: "h-10 md:h-12 px-4 py-2",
         nav: "h-10 px-4 py-2",
-        sm: "h-8 rounded-md px-3",
+        sm: "h-8 rounded-md",
         lg: "h-10 rounded-md px-8",
         icon: "h-8 w-8",
       },
