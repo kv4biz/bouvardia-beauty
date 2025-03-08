@@ -9,27 +9,28 @@ interface ServicePageProps {
   };
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
+export default async function ServicePage({ params }: ServicePageProps) {
   const { slug } = params;
   const service = Services.find((s) => s.id === slug);
-  // If no service is found
+
   if (!service) {
     return (
       <section className="py-10 lg:py-28 text-center inter">
         <div className="container mx-auto py-10 flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold">Service Not Found</h1>
-          <p className="text-lg  mt-4">
+          <p className="text-lg mt-4">
             The service you are looking for does not exist or has been removed.
           </p>
           <Button variant={"darkghost"} className="p-4 px-8 rounded-lg mt-8">
             <Link href="/">
-              <p className="">Go Back to home</p>
+              <p>Go Back to home</p>
             </Link>
           </Button>
         </div>
       </section>
     );
   }
+
   return (
     <div className="w-full py-10 md:py-16">
       <div className="container mx-auto flex flex-col gap-5 md:gap-8 lg:gap-12 justify-center py-10 px-4">
@@ -59,7 +60,7 @@ export default function ServicePage({ params }: ServicePageProps) {
             {service.desc}
           </p>
         </div>
-        <div className="flex flex-col gap-4 roboto px-2 md-px-6 lg:px-16">
+        <div className="flex flex-col gap-3 lg:gap-8 roboto px-2 md:px-6 lg:px-28">
           <p>
             Cancellation Policy
             <br />
@@ -82,7 +83,7 @@ export default function ServicePage({ params }: ServicePageProps) {
           <p>
             Timing is very crucial to the successful delivery of my service to
             you and other clients alike, so please keep to your appointment
-            times strictly. A lateness fee of $50 applies after a 15 -30 minute
+            times strictly. A lateness fee of $50 applies after a 15-30 minute
             wait period and the appointment may be cancelled once you’re over 30
             minutes late.
           </p>
