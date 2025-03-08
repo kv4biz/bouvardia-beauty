@@ -15,6 +15,8 @@ import {
   Inria_Serif,
   Playfair_Display,
   IBM_Plex_Mono,
+  Roboto,
+  Roboto_Condensed,
 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -26,6 +28,16 @@ const allura = Allura({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-allura",
+});
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
+const robotoCondensed = Roboto_Condensed({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-robotoCondensed",
 });
 const IBMPlexMono = IBM_Plex_Mono({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -116,7 +128,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${allura.variable} ${IBMPlexMono.variable} ${kurale.variable} ${murecho.variable} ${italianno.variable} ${domine.variable} ${playfairDisplay.variable} ${inriaSerif.variable} ${pathwayGothicOne.variable} ${poppins.variable} ${jomolhari.variable} ${inter.variable} ${zeyada.variable} ${instrumentSerif.variable} ${heebo.variable} antialiased `}
+        className={`${allura.variable} ${roboto.variable} ${robotoCondensed.variable} ${IBMPlexMono.variable} ${kurale.variable} ${murecho.variable} ${italianno.variable} ${domine.variable} ${playfairDisplay.variable} ${inriaSerif.variable} ${pathwayGothicOne.variable} ${poppins.variable} ${jomolhari.variable} ${inter.variable} ${zeyada.variable} ${instrumentSerif.variable} ${heebo.variable} antialiased `}
       >
         <Navbar />
         {children}

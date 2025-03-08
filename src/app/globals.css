@@ -84,6 +84,12 @@ body {
   .poppins {
     @apply font-[family-name:var(--font-poppins)];
   }
+  .roboto {
+    @apply font-[family-name:var(--font-roboto)];
+  }
+  .robotoCondensed {
+    @apply font-[family-name:var(--font-robotoCondensed)];
+  }
   .inter {
     @apply font-[family-name:var(--font-inter)];
   }

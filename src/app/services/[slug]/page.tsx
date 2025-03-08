@@ -51,9 +51,80 @@ export default function ServicePage({ params }: ServicePageProps) {
             </Button>
           </div>
         </div>
-        <div className="p-4 lg:py-6 border-y-2 inter border-darkTan">
-          <p className="capitalise text-xl font-medium">Service Description</p>
-          <p className="font-light text-lg max-w-4xl">{service.desc}</p>
+        <div className="p-4 lg:py-6 border-y-2 border-darkTan">
+          <p className="capitalise text-xl roboto font-medium">
+            Service Description
+          </p>
+          <p className="font-light text-lg robotoCondensed mt-2 max-w-4xl">
+            {service.desc}
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 roboto px-2 md-px-6 lg:px-16">
+          <p>
+            Cancellation Policy
+            <br />
+            Dear Client,
+          </p>
+          <p>
+            Thank you so much for considering Tolabanks beauty. Please Read
+            Terms of Booking Before Paying.
+          </p>
+          <p>
+            Please note that the fees above are for service(s) stated on the
+            invoice only.
+          </p>
+          <p>
+            For regular glam sessions; <br /> Studio sessions are for only
+            booked in clients so please endeavour to come alone for your
+            appointment. No friends, or family who aren’t getting their make up
+            done will be necessary to bring along for your appointment.
+          </p>
+          <p>
+            Timing is very crucial to the successful delivery of my service to
+            you and other clients alike, so please keep to your appointment
+            times strictly. A lateness fee of $50 applies after a 15 -30 minute
+            wait period and the appointment may be cancelled once you’re over 30
+            minutes late.
+          </p>
+          <p>Payments;</p>
+          <p>
+            Non Bridals - A 50% non-refundable deposit is required to book and
+            the balance is due 24 hours to service date/time. <br /> For Bridals
+            - A 30% non-refundable deposit is required to book and the balance
+            is due at least 2 weeks to the wedding day. <br /> Appointments can
+            be rescheduled within 2 months of original booking date and is
+            strictly based on the discretion and availability of the artist.
+          </p>
+          <p>
+            With your permission, there may be videos and pictures of you taken
+            during and/or after your appointment, It would be really nice to
+            come with your outfit or something you’re comfortable wearing in
+            pictures. Black, white or neutral colored tops and sweats are a good
+            way to go when you don’t want to dress up just yet.
+          </p>
+          <p>For Bridals;</p>
+          <p>
+            Touch up services are available from $100. Waiting time is 30
+            minutes from agreed timing as longer hours would attract extra
+            charges.
+          </p>
+          <p>Bonuses</p>
+          <p>
+            - All bridal bookings come with a complimentary bridal consultation
+            (virtually or atstudio). <br />- All booked brides get $50 off their
+            bridesmaid’s make up. <br />- Booked Trad brides get 50% off head
+            gear styling
+          </p>
+          <p>For services outside Calgary, </p>
+          <p>
+            An out of station fee of $100-$500 will apply based on location.
+            Flight costs, ground transportation and hotel accommodation will be
+            sorted by the client or paid for separately.
+          </p>
+          <p>
+            Thank you so much for your understanding and compliance, I look
+            forward to an awesome glam time with you ❤️.
+          </p>
         </div>
       </div>
     </div>
