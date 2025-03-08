@@ -3,14 +3,12 @@ import Link from "next/link";
 import { Services } from "@/context/servicesContext";
 import { Button } from "@/components/ui/button";
 
-interface ServicePageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function ServicePage({ params }: ServicePageProps) {
-  const { slug } = params;
+export default async function ServicePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   const service = Services.find((s) => s.id === slug);
 
   if (!service) {
