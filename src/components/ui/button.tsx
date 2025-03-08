@@ -15,8 +15,7 @@ const buttonVariants = cva(
           "text-darkGray bg-pinkLight hover:bg-darkGray hover:text-pinkLight border border-pinkLight",
         outline:
           "bg-transparent border border-darkTan text-darkTan hover:text-white hover:bg-darkTan jomolhari text-sm w-[120px] lg:w-[160px]",
-        secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+        secondary: "bg-darkTan text-white shadow-sm hover:bg-darkTan/80",
         ghost:
           "bg-white text-darkGray rounded-none hover:bg-darkGray hover:text-white hover:border hover:border-white",
         darkghost:
